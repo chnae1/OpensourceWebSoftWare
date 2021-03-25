@@ -1,0 +1,47 @@
+<!--참조 https://xd.adobe.com/spec/410da927-50...(이미지, 아이콘)-->>
+<!--참조 구글 폰트(폰트)-->>
+<!doctype html>
+<html lang="ko">
+    <head>
+        <!--구글 폰트가져오기-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+        <!--css연동-->
+        <link rel="stylesheet" type="text/css" href="Listpage.css">
+    </head>
+    <body>
+        <div class = "wrap">
+            <div class = "intro_bg">
+                <div class = "header">
+                    <div class = "searchArea">
+                        <form class ="search"><!--form 구현해야됨-->
+                            <input class = "SearchWord" type="text"  name="search" maxlength="255" placeholder="상품 품목 검색" onfocus="this.placeholder=''" onblur="this.placeholder='상품 품목 검색'" autocomplete="off" >
+                            <button class = "search_button" type="submit" name="click" value="">
+                                검색
+                                <i class ="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <ul class = "nav">
+                        <li><a href="#">HOME</a></li> <!--미구현:페이지 이동 기능-->
+                        <li><a href="#">SIGN IN</a></li><!--미구현:페이지 이동 기능-->
+                        <li><a href="#">MYPAGE</a></li><!--미구현:페이지 이동 기능-->
+                    </ul>
+                </div>
+                <div class=intro_text>
+                    <h1>
+                        오픈소스웹 소프트웨어
+                    </h1>
+                </div>
+            </div>
+            <div class ="body">
+                <div class = "aside">
+
+                </div>
+                <div class = "main">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
