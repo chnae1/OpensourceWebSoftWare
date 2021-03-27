@@ -10,8 +10,8 @@
  
 .intro_bg{
     background-image: url("image/intro.png");
-    width: 100%;
-    height: 718px;
+    width: 1900px;
+    height: 400px;
 }
 
 .header{
@@ -60,9 +60,150 @@ input::placeholder{
 }
 .intro_text{
     width: 320px;
-    margin: 231px auto 231px auto;
+    margin: 90px auto 90px auto;
     text-align: center;
 }
 .intro_text > h1{
     color: white;
 }
+.intro_text > h4{
+    color: white;
+}
+.main{
+    width: 1300px;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+
+}
+.aside{
+    width: 200px;
+    height: 80%px;
+    position: fixed;
+    bottom:30px;
+}
+.body
+{
+    width: 1900px;
+    height: 1500px;
+    display: flex;
+}
+
+.order_bar{
+    width: 1900px;
+    height: 90px;
+    margin: auto;
+}
+.order_bar>ul>li{
+    flex: 1;
+    text-align: center;
+    line-height: 60px;
+    height: 57px;
+    width: 200px;
+    margin-top: 37px;
+    background-color:  white;
+
+}
+.order_bar>ul>li>a{
+    margin-top: 30px;
+    width: 10px;
+    font-size: 20px;
+    font-weight:lighter;
+}
+.order_bar>ul>li:not(:last-child)
+{
+    border-right: 1px solid gray;
+}
+
+.order_frame{
+    width: 1655px;
+    height: 90px;
+}
+.order{
+    margin: auto;
+    display: flex;
+    position: relative;
+    top:-62px;
+    height: 120px;
+    width: 980px;;
+    background-color:  white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border-radius: 5%;
+}
+.aside>ul{
+
+    text-align: center;
+    height: 100%;
+}
+.aside>ul>li{
+    padding: 21px;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+.aside>ul>li:not(:last-child){
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.main>h3{
+    margin-left: 600px;
+}
+.item_boxs{
+    width:200px;
+    margin-left:80px;
+    margin-top:80px;
+    float: left;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding:10px;
+    position: sticky;
+}
+.a{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.b{
+    font-weight: bold;
+    margin-top: 5px;
+}
+.c{
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 130%;
+    color:#444;
+}
+.d{
+    font-size: 12px;
+    margin-top:25px;
+    color:rgba(0,0,0,0.3);
+}
+.b>span{
+    color:chocolate;
+    margin-left: 5px;
+}
+.order_name{
+    width: 1900px;
+    text-align: center;
+}
+.footer
+{
+    width: 1900px;
+    margin: 0 auto;
+
+
+}
+.footer_context{
+    border-top: 1px solid #444;
+    width: 1300px;
+    text-align: center;
+    position: relative;
+    left: 300px;
+    background-color :rgba(0,0,0,0.3);
+}
+.footer_context>h3{
+    margin: 10px;
+}
+.footer_context>ul>li{
+    margin: 10px;
+}
+
+
