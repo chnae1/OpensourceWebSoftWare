@@ -1,73 +1,122 @@
+<!--참조 https://xd.adobe.com/spec/410da927-50...(이미지, 아이콘)-->>
+<!--참조 구글 폰트(폰트)-->>
 <!doctype html>
 <html lang="ko">
     <head>
         <!--구글 폰트가져오기-->
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
-        <!--css연동--> 
-        <link rel="stylesheet" type="text/css" href="Detailpage.css">     
-        <a href="https://icons8.com/icon/87261/google-웹-검색">Google 웹 검색 icon by Icons8</a><!--icon8 저작권 footer에 넣기-->
+        <!--css연동-->
+        <link rel="stylesheet" type="text/css" href="Detailpage.css">
+        <meta charset="UTF-8">
     </head>
     <body>
-        <div class="wrap">
-            <div class = "header">
-                <div class="user_menu">
+        <div class = "wrap">
+            <div class = "intro_bg">
+                <div class = "header">
+                    <div class = "searchArea">
+                        <form class ="search"><!--form 구현해야됨-->
+                            <input class = "SearchWord" type="text"  name="search" maxlength="255" placeholder="상품 품목 검색" onfocus="this.placeholder=''" onblur="this.placeholder='상품 품목 검색'" autocomplete="off" >
+                            <button class = "search_button" type="submit" name="click" value="">
+                                검색 <!-- 마우스 텍스트 위에 올라가면 색상변경 누르면 해당 내용 이동 -->
+                                <i class ="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- 마우스 텍스트 위에 올라가면 색상변경 누르면 해당 내용 이동 -->
+                    <ul class = "nav">
+                        <li><a href="#">HOME</a></li> 
+                        <li><a href="#">SIGN IN</a></li>
+                        <li><a href="#">MYPAGE</a></li>
+                    </ul>
+                </div>
+                <div class=intro_text>
+                    <h1>
+                        오픈소스웹 소프트웨어
+                    </h1>
+                    <h4>
+                        오징어는 오징오징
+                    </h4>
+                </div>
+            </div>
+            <div class ="order_bar">
+                <ul class = order>
+                    <!-- 마우스 텍스트 위에 올라가면 색상변경 누르면 해당 내용 이동 -->
+                    <li><a href="#" >카테고리</a></li>
+                    <li><a href="#" >전체상품</a></li>
+                    <li><a href="#" >   </a></li><!--미구현-->
+                    <li><a href="#">   </a></li><!--미구현-->
+                    <li><a href="#">   </a></li><!--미구현-->
+                    <li><a href="#">장바구니</a></li>
+                </ul>
+            </div>
+            <div class ="order_name"><h3>전체상품</h3></div>           <!-- 마우스 텍스트 위에 올라가면 색상변경  -->
+            <div class ="body">
+                <div class="main">
+                    <div class = "picture_box">
+                        
+                    </div>
+                    <div class ="detail_box">
+                        <div class = "item_name"></div>
+                        <div class = "item_price"></div>
+                        <ul class = "item_composition">
+                            <li class = "list">
+                                <div class = "dd">판매단위</div>
+                                <div class = "dl">1</div>
+                            </li>
+                            <li class = "list">
+                                <div class = "dd">중량/용량</div>
+                                <div class = "dl"></div>
+                            </li>
+                            <li class = "list">
+                                <div class = "dd">배송수단</div>
+                                <div class = "dl"></div>
+                            </li>
+                            <li class = "list">
+                                <div class = "dd">안내사항</div>
+                                <div class = "dl"></div>
+                            </li>
+                            <li class = "list">
+                                <div class = "dd">구매수량</div>
+                                <div class = "dl">
+                                    <div class ="num">
+                                        <button class ="minor">1</button>
+                                        <!-- 버튼에 이미지+ - 넣고 스크립트로 버튼 누르면 숫자 변경되게 가운데 수정하고 -->
+                                        <p>1</p>
+                                        <button class ="plus">2</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class></div>
+                    </div>
+                </div>
+                <div class="ItemNav">
+                    <ul class ="ItemView_nav"> 
+                        <!-- 마우스를 올리면 아래의 boarder가 사라짐 -->
+                        <!-- 마우스 텍스트 위에 올라가면 색상변경 누르면 해당 내용 이동 -->
+                        <li><a href="#">상품영상</a></li>
+                        <li><a href="#">고객후기</a></li>   <!--미구현-->
+                        <li><a href="#">상품문의</a></li>  <!--미구현-->
+                    </ul>
+                </div>
+                <div class = "ItemView">
+
+                </div>
+            </div>            
+            <div class ="footer" >
+                <div class = "footer_context">
+                    <h3>
+                         쇼핑몰 회사(주)
+                    </h3>
                     <ul>
-                        <li><a href="#">Home |</a></li>
-                        <li><a href="#">Sign In |</a></li>
-                        <li><a href="#">MyPage</a></li>
+                        <li><a href="https://icons8.com/icon/87261/google-웹-검색">Google 웹 검색 icon by Icons8</a></li>
+                        <li>사업자 등록번호 12345</li>
+                        <li>대표이사 홍길동 | 경기도 용인시 수지구 정평로 12345</li>
+                        <li>전화 1234-1234</li>
                     </ul>
-                </div>   
-                <div class="logo_bar">
-
                 </div>
-                <div class="nav_bar">
-                    <ul class="nav_menu">
-                        <li class="Category">
-                                <a ref="#" >
-                                    <span class = "category_icon"></span>
-                                    <span class = "category_text">전체 카테고리</span>
-                                </a>
-                        </li>
-                        <li class="Menu1">
-                            
-                        </li>
-                        <li class="Menu2">
-                            
-                        </li> 
-                        <li class="Menu3">
-                            
-                        </li>
-                        <li class="Menu4">
-                            
-                        </li>
-                        <li class="Menu5">
-                           
-                        </li>
-                        <li class = "SearchArea">
-                            <form>
-                                <input class="search_bar" type="text">
-                                <button>
-                                    <img src="image/search.png">
-                                    <i class ="fas fa-search"></i>
-                                </button>
-                            </form>
-                        </li>
-                    </ul>
-                    <div 
-                </div>
-            </div>
-            <div class = "main">
-                <div class ="content">
-
-                </div>
-                <div class = "Goods_detail_wrapper">
-                
-                </div>
-            </div>
-            <div class = "footer">
-
-            </div>
+            </div>   
         </div>
     </body>
 </html>
